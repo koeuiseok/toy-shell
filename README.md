@@ -1,6 +1,8 @@
 # toy-shell
 
 ## 20161890 euiseok Ko
+## on WSL2 
+## on Ubuntu 16.04
 
 ## User Name
 You can specify a user name that you want. 
