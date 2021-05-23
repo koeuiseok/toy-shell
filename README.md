@@ -17,8 +17,14 @@ Write "exit" or "Q", then shell is over
 if you write "cwd", then shell will print path of current directory
 
 ## Shell Command
-if you want to execute shell command you will write only "shell_command"
+if you want to execute shell command, you will write only "shell_command"
+For example 
+ > Write "ls" => print All files on current directory
+ > Write "cat" => If you use a word, shell prints the word repeatedly.
+ > Write "pwd" => print current directory
+ > You can use shell command that is on "/bin/~"
+ > But you can not use options
 
 ## Execute Program
-if you want to execute your program you will write "./program_name"
+if you want to execute your program, you will write "./program_name"
 
