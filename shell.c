@@ -112,9 +112,7 @@ int main(void)
             tmp1 = strtok(tmp, " ");
             tmp2 = strtok(NULL, " ");
             args[0] = tmp1;
-            printf("args[0] = [%s], tmp = [%s]\n", args[0], tmp);
-            printf("tmp1 = %s, tmp2 = %s, *args = %s\n", tmp1, tmp2, *args);
-            printf("[%s]\n", command);
+        
         }
 
         pid = fork();
