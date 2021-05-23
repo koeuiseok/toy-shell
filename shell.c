@@ -16,6 +16,14 @@
 
 char userName[MAX_LEN_LINE];
 int nameLen;
+
+#define C_NRML "\033[0m"
+#define C_BLCK "\033[30m"
+#define C_RED  "\033[31m"
+#define C_GREN "\033[32m"
+#define C_YLLW "\033[33m"
+#define C_BLUE "\033[34m"
+
  
 void error_handling(char* msg)
 {
@@ -69,7 +77,7 @@ int main(void)
         flag = 0;
         getcwd(cwd, sizeof(cwd));
         
-        printf("%s@host :%s $ ", userName, cwd);
+        printf("%s%s@host :%s $ %s", C_GREN,userName, cwd, C_NRML);
         s = fgets(command, MAX_LEN_LINE, stdin);
         args[0] = command;
         if (s == NULL) {
